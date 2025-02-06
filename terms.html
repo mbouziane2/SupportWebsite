@@ -4,17 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - GeoQuiz</title>
-    <!-- Copy all styles from index.html -->
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        :root {
+            --primary-color: #1565C0;
+            --secondary-color: #0D47A1;
+            --accent-color: #FF6F00;
+            --background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary-color), #0D47A1);
+            color: white;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .policy-content {
+            margin-top: 20px;
+        }
+
+        .policy-content h3 {
+            color: var(--secondary-color);
+            margin-top: 25px;
+            font-size: 1.3em;
+        }
+
+        .policy-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .policy-content li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .policy-content li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .policy-content strong {
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--primary-color), #0D47A1);
+            color: white;
+            margin-top: 60px;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            background: rgba(255,255,255,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-color), transparent);
+            border-radius: 2px;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                border-radius: 0 0 20px 20px;
+                padding: 30px 15px;
+            }
+            
+            .card {
+                margin: 15px 10px;
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="bg-elements"></div>
     <div class="container">
-        <div class="header">
+        <header class="header">
             <h1>📋 Terms of Service</h1>
-            <p>Last updated: January 2025</p>
-        </div>
+            <p>Last updated: February 2025</p>
+        </header>
 
-        <div class="support-section">
+        <div class="card">
             <h2>Terms and Conditions</h2>
             <div class="policy-content">
                 <h3>App Usage Terms</h3>
@@ -53,9 +194,10 @@
         </div>
 
         <footer>
-            <p>© 2024 GeoQuiz - Learn Geography. All rights reserved.</p>
+            <p>© 2025 GeoQuiz - Learn Geography. All rights reserved.</p>
             <div class="footer-links">
-                <a href="index.html">Support</a> • 
+                <a href="index.html">Support</a>
+                <span style="color: rgba(255,255,255,0.5)">•</span>
                 <a href="privacy.html">Privacy Policy</a>
             </div>
         </footer>
